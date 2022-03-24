@@ -49,6 +49,9 @@ Now you can see a little a new services .
 
 You can start your container that is in the container section or manage your image and network from there now !
 
+## 6 Connection
+
+You can connect from anywhere just by going for the localhost (127.0.0.1) and the default port of MySQL 3306 .
 ## End
 
 I hope this tutorial helped you !
