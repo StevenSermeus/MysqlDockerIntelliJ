@@ -21,7 +21,7 @@ Insert all your creation script in this folder .
 
 Once done you can open a terminal in the folder where the **MysqlDocker** file is and run this command (*On linux run it as su*) : 
 
-`docker build -t name_of_choice -f ./MysqlDocker .`
+    docker build -t name_of_choice -f ./MysqlDocker .
 
 ## 3 Start the container
 
@@ -29,7 +29,7 @@ It's time to start your container now !
 
 Run the next command (*On linux run it as su*):
 
-`docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice`
+    docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
 
 Well done your container run for the first time !
 
