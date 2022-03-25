@@ -1,5 +1,8 @@
 # Setup Mysql with docker and IntelliJ
 
+You want a fast :zap: and lightweight way way to have a mysql server to dev a cool app ? 
+
+You are on the perfect tutorial ! :whale:
 ## 1 Install docker
 
 Clone the repository than 
@@ -19,7 +22,7 @@ Create a folder name **scripts-sql** .
 
 Insert all your creation script in this folder .
 
-Once done you can open a terminal in the folder where the **MysqlDocker** file is and run this command (*On linux run it as su*) : 
+Once done you can open a terminal in the folder where the **MysqlDocker** file is and run this command (*On linux run it as su*) :clipboard: : 
 
     docker build -t name_of_choice -f ./MysqlDocker .
 
@@ -27,7 +30,7 @@ Once done you can open a terminal in the folder where the **MysqlDocker** file i
 
 It's time to start your container now ! 
 
-Run the next command (*On linux run it as su*):
+Run the next command (*On linux run it as su*) :clipboard: : 
 
     docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
 
@@ -65,8 +68,8 @@ You can also see all your container and image using
 
 ## 6 Connection
 
-You can connect from anywhere just by going for the localhost (127.0.0.1) and the default port of MySQL 3306 .
+You can connect from anywhere just by going for the localhost (127.0.0.1) and the default port of MySQL 3306 . :fire:
 
 ## End
 
-I hope this tutorial helped you !
+I hope this tutorial helped you ! :shipit:
