@@ -6,11 +6,11 @@ Clone the repository than
 
 For windows
 
-    Download docker from the [official web site](https://www.docker.com/get-started/) and install .
+Download docker from the [official web site](https://www.docker.com/get-started/) and install .
 
 For Linux
 
-    Use your package manager and install docker and docker.io .
+Use your package manager and install docker and docker.io .
 
 
 ## 2 Create the container
