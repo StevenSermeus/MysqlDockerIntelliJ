@@ -49,9 +49,24 @@ Now you can see a little a new services .
 
 You can start your container that is in the container section or manage your image and network from there now !
 
+Or you can be a bit fancy and do it from the command line with
+
+    docker start name_of_choice
+
+    docker stop name_of_choice
+
+    docker restart name_of_choice
+
+You can also see all your container and image using 
+
+    docker container ls
+
+    docker image ls
+
 ## 6 Connection
 
 You can connect from anywhere just by going for the localhost (127.0.0.1) and the default port of MySQL 3306 .
+
 ## End
 
 I hope this tutorial helped you !
