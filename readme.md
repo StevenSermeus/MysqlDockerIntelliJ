@@ -3,9 +3,11 @@
 You want a fast :zap: and lightweight way to have a mysql server to dev a cool app ? 
 
 You are on the perfect tutorial ! :whale:
-## 1 Install docker
+## 1 Needed files
 
-Clone the repository than 
+Clone the repository
+
+## 2 Install docker
 
 For windows
 
@@ -16,27 +18,27 @@ For Linux
 Use your package manager and install docker and docker.io .
 
 
-## 2 Create the container
+## 3 Create the container
 
 Create a folder name **scripts-sql** .
 
 Insert all your creation script in this folder .
 
-Once done you can open a terminal in the folder where the **MysqlDocker** file is and run this command (*On linux run it as su*) :clipboard: : 
+Once done you can open a terminal in the folder where the **dockerfile** file is and run this command (*On linux run it as su*) :clipboard: : 
 
-    docker build -t name_of_choice -f ./MysqlDocker .
+    docker build -t name_of_choice -f ./dockerfile .
 
-## 3 Start the container
+## 4 Start the container
 
 It's time to start your container now ! 
 
 Run the next command (*On linux run it as su*) :clipboard: : 
 
     docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
-
+    docker start name_of_choice
 Well done your container run for the first time !
 
-## 4 Intellij
+## 5 Intellij
 
 Now head on Intellij and go in the settings and search for docker.
 
@@ -44,7 +46,7 @@ Now head on Intellij and go in the settings and search for docker.
 
 Once you find it click on it than the little plus, if all the setup went well you shoud see a message *Connection successful* !
 
-## 5 Usage
+## 6 Usage
 
 Now you can see a little a new services .
 
@@ -66,7 +68,7 @@ You can also see all your container and image using
 
     docker image ls
 
-## 6 Connection
+## 7 Connection
 
 You can connect from anywhere just by going for the localhost (127.0.0.1) and the default port of MySQL 3306 . :fire:
 
