@@ -5,7 +5,7 @@ You want a fast :zap: and lightweight way to have a mysql server to dev a cool a
 You are on the perfect tutorial ! :whale:
 ## 1 Needed files
 
-Clone the repository
+Clone this repository.
 
 ## 2 Install docker
 
@@ -20,14 +20,19 @@ Use your package manager and install docker and docker.io .
 
 ## 3 Create the container
 
-Create a folder name **scripts-sql** .
+Create a folder name **scripts-sql**.
 
-Insert all your creation script in this folder .
+Insert all your creation script in this folder.
 
 Once done you can open a terminal in the folder where the **dockerfile** file is and run this command (*On linux run it as su*) :clipboard: : 
 
-    docker build -t name_of_choice -f ./dockerfile .
+    docker build -t name_of_choice 
 
+Need more details ?
+
+-t will set the name of your image
+
+we aren't giving the name or path of the file cause in our case when the file is named dockerfile. When you run a build task in a directory docker will try to find a dockerfile in the repertory where you run the task.
 ## 4 Start the container
 
 It's time to start your container now ! 
@@ -36,8 +41,18 @@ Run the next command (*On linux run it as su*) :clipboard: :
 
     docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
     docker start name_of_choice
-Well done your container run for the first time !
 
+Well done your container run for the first time ! :zap:
+
+Need more details ?
+
+-p is the mapping of the port where you open on your container.
+
+-d means detached so the container will continue to run even if you close your terminal
+
+--name will be the name of your container. You use to start stop or interact with this container.
+
+-e is a variable. In this case it's use to setup your password to acces the database.
 ## 5 Intellij
 
 Now head on Intellij and go in the settings and search for docker.
@@ -49,12 +64,11 @@ Once you find it click on it than the little plus, if all the setup went well yo
 ## 6 Usage
 
 Now you can see a little a new services .
+You can start your container that is in the container section or manage your image and network from there now !
 
 ![Servicies](/images/2.png)
 
-You can start your container that is in the container section or manage your image and network from there now !
-
-Or you can be a bit fancy and do it from the command line with
+Or you can be a bit fancy and do it from the command line with :clipboard: :
 
     docker start name_of_choice
 
@@ -62,7 +76,7 @@ Or you can be a bit fancy and do it from the command line with
 
     docker restart name_of_choice
 
-You can also see all your container and image using 
+You can also see all your container and image using :clipboard: : 
 
     docker container ls
 
@@ -75,3 +89,7 @@ You can connect from anywhere just by going for the localhost (127.0.0.1) and th
 ## End
 
 I hope this tutorial helped you ! :shipit:
+
+Wrote by [Steven Sermeus] :fire:
+
+If you have a question either use github or send me a private message on discord (Steven-Sensei#3484) :fire:
