@@ -1,6 +1,6 @@
 # Setup Mysql with docker and IntelliJ
 
-You want a fast :zap: and lightweight way way to have a mysql server to dev a cool app ? 
+You want a fast :zap: and lightweight way to have a mysql server to dev a cool app ? 
 
 You are on the perfect tutorial ! :whale:
 ## 1 Install docker
