@@ -26,7 +26,7 @@ Insert all your creation script in this folder.
 
 Once done you can open a terminal in the folder where the **dockerfile** file is and run this command (*On linux run it as su*) :clipboard: : 
 
-    docker build -t name_of_choice 
+    docker build -t name_of_choice .
 
 Need more details ?
 
