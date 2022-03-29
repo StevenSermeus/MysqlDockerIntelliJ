@@ -26,7 +26,7 @@ Insert all your creation script in this folder.
 
 Once done you can open a terminal in the folder where the **dockerfile** file is and run this command (*On linux run it as su*) :clipboard: : 
 
-    docker build -t name_of_choice 
+    docker build -t name_of_choice 
 
 Need more details ?
 
@@ -39,8 +39,9 @@ It's time to start your container now !
 
 Run the next command (*On linux run it as su*) :clipboard: : 
 
-    docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
-    docker start name_of_choice
+    docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
+
+    docker start name_of_choice
 
 Well done, your container run for the first time ! :zap:
 
@@ -70,17 +71,17 @@ You can start your container that is in the container section or manage your ima
 
 Or you can be a bit fancy and do it from the command line with :clipboard: :
 
-    docker start name_of_choice
+    docker start name_of_choice
 
-    docker stop name_of_choice
+    docker stop name_of_choice
 
-    docker restart name_of_choice
+    docker restart name_of_choice
 
 You can also see all your container and image using :clipboard: : 
 
-    docker container ls
+    docker container ls
 
-    docker image ls
+    docker image ls
 
 ## 7 Connection
 
