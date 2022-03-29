@@ -7,11 +7,11 @@ You are on the perfect tutorial ! :whale:
 
 Clone this repository.
 
-## 2 Install docker
+## 2 Docker installation
 
 For windows
 
-Download docker from the [official web site](https://www.docker.com/get-started/) and install .
+Download docker from the [official website](https://www.docker.com/get-started/) and install .
 
 For Linux
 
@@ -26,36 +26,36 @@ Insert all your creation script in this folder.
 
 Once done you can open a terminal in the folder where the **dockerfile** file is and run this command (*On linux run it as su*) :clipboard: : 
 
-    docker build -t name_of_choice 
+    docker build -t name_of_choice 
 
 Need more details ?
 
 -t will set the name of your image
 
-we aren't giving the name or path of the file cause in our case when the file is named dockerfile. When you run a build task in a directory docker will try to find a dockerfile in the repertory where you run the task.
+we aren't giving the name or path of the file, cause in our case when the file is named dockerfile. When you run a build task in a directory, docker will try to find a dockerfile in the repertory where you run the task.
 ## 4 Start the container
 
 It's time to start your container now ! 
 
 Run the next command (*On linux run it as su*) :clipboard: : 
 
-    docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
-    docker start name_of_choice
+    docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
+    docker start name_of_choice
 
-Well done your container run for the first time ! :zap:
+Well done, your container run for the first time ! :zap:
 
 Need more details ?
 
 -p is the mapping of the port where you open on your container.
 
--d means detached so the container will continue to run even if you close your terminal
+-d means detached, so the container will continue to run even if you close your terminal
 
---name will be the name of your container. You use to start stop or interact with this container.
+--name will be the name of your container. You use to start, stop or interact with this container.
 
--e is a variable. In this case it's use to setup your password to acces the database.
+-e is a variable. In this case, it's used to set up your password to acces the database.
 ## 5 Intellij
 
-Now head on Intellij and go in the settings and search for docker.
+Now head to Intellij and go to the settings and search for docker.
 
 ![Intellij setting](/images/1.png)
 
@@ -63,28 +63,28 @@ Once you find it click on it than the little plus, if all the setup went well yo
 
 ## 6 Usage
 
-Now you can see a little a new services .
+Now you can see a little new services.
 You can start your container that is in the container section or manage your image and network from there now !
 
 ![Servicies](/images/2.png)
 
 Or you can be a bit fancy and do it from the command line with :clipboard: :
 
-    docker start name_of_choice
+    docker start name_of_choice
 
-    docker stop name_of_choice
+    docker stop name_of_choice
 
-    docker restart name_of_choice
+    docker restart name_of_choice
 
 You can also see all your container and image using :clipboard: : 
 
-    docker container ls
+    docker container ls
 
-    docker image ls
+    docker image ls
 
 ## 7 Connection
 
-You can connect from anywhere just by going for the localhost (127.0.0.1) and the default port of MySQL 3306 . :fire:
+You can connect from anywhere just by going to the localhost (127.0.0.1) and the default port of MySQL 3306 . :fire:
 
 ## End
 
@@ -92,4 +92,4 @@ I hope this tutorial helped you ! :shipit:
 
 Wrote by [Steven Sermeus] :fire:
 
-If you have a question either use github or send me a private message on discord (Steven-Sensei#3484) :fire:
+If you have a question, either use GitHub or send me a private message on discord (Steven-Sensei#3484) :fire:
