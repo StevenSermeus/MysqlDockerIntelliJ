@@ -31,7 +31,7 @@ In the **scripts-sql** folder insert all your creation if you have it already. I
 
 Once done you can open a terminal in the folder where the **dockerfile** file is and run this command (*On linux run it as su*) :clipboard: : 
 
-    docker build -t name_of_choice .
+    docker build -t name_of_choice_image .
 
 Need more details ?
 
@@ -44,7 +44,7 @@ It's time to start your container now !
 
 Run the next command (*On linux run it as su*) :clipboard: : 
 
-    docker run --name name_of_choice -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice
+    docker run --name name_of_choice_container -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password_of_choice -d name_of_choice_image
 
     docker start name_of_choice
 
