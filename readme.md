@@ -27,7 +27,7 @@ Use your package manager and install docker and docker.io .
 
 ## 3 Create the container
 
-In the **scripts-sql**folder insert all your creation if you have it already. If not no worry i have already create a hello world script for this tutorial and when you have your final script either create the database using DataGrip, ... . But the best practice for docker would be to delete the older image and rebuild you container with the script in the **scripts-sql** folder.
+In the **scripts-sql** folder insert all your creation if you have it already. If not no worry i have already create a hello world script for this tutorial and when you have your final script either create the database using DataGrip, ... . But the best practice for docker would be to delete the older image and rebuild you container with the script in the **scripts-sql** folder.
 
 Once done you can open a terminal in the folder where the **dockerfile** file is and run this command (*On linux run it as su*) :clipboard: : 
 
