@@ -16,6 +16,7 @@ Download docker from the [official website](https://www.docker.com/get-started/)
 Docker does need either Hyper-v or wsl 2 to run.
 
 I suggest you wsl and there is the link to the [official install guide for wsl](https://docs.microsoft.com/en-us/windows/wsl/install).After that you can update it for wsl 2 with this link https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi.
+When it's install you need to restart your computer.
 
 You may say a lot of install but wsl is a great tool to have but i ll make a separate github repository to speak about it.
 (In short you can have a full linux running natively in windows that is way faster than a virtual machine)
